@@ -9,15 +9,32 @@ import NewsPage from "../Pages/CustomPages/NewsPage"
 import SectionPage from "../Pages/CustomPages/SectionPage"
 import CategoryPage from "../Pages/CustomPages/CategoryPage"
 import NotFound from '../Pages/NotFound'
-
+import Crime from '../Pages/Crime'
+import Sports from '../Pages/Sports'
+import Career from '../Pages/Career'
+import Lifestyle from '../Pages/Lifestyle'
+// import Dharm from '../Pages/Dharm'
+import Bihar from '../Pages/Bihar'
+import Election from '../Pages/Election'
+import Jharkhand from '../Pages/Jharkhand'
+// import Nation from '../Pages/Nation'
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="bihar" element={<Bihar />} />
+      <Route path="election" element={<Election />} />
+      <Route path="jharkhand" element={<Jharkhand />} />
+      {/* <Route path="nation" element={<Nation />} /> */}
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="articles" element={<ArticlePage />} />
       <Route path="articles/:id" element={<ArticlePage />} />
+      <Route path="crime" element={<Crime />} />
+      <Route path="sports" element={<Sports />} />
+      <Route path="career" element={<Career />} />
+      <Route path="lifestyle" element={<Lifestyle />} />
+      {/* <Route path="dharm" element={<Dharm />} /> */}
       <Route path="news/:id" element={<NewsPage />} />
       <Route path="section" element={<SectionPage />} />
       <Route path="category/:categoryName" element={<CategoryPage />} />

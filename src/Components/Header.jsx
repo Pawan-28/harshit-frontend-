@@ -8,32 +8,32 @@ const Header = () => {
   const navItems = {
     hindi: [
       { name: "होम", path: "/" },
-      { name: "चुनाव", path: "/category/elections" },
-      { name: "बिहार", path: "/category/bihar" },
-      { name: "झारखंड", path: "/category/jharkhand" },
-      { name: "देश", path: "/category/nation" },
+      { name: "चुनाव", path: "/election" },
+      { name: "बिहार", path: "/bihar" },
+      { name: "झारखंड", path: "/jharkhand" },
+      { name: "देश", path: "/nation" },
       { name: "राजनीति", path: "/category/politics" },
-      { name: "जुर्म", path: "/category/crime" },
-      { name: "खेल", path: "/category/sports" },
-      { name: "करियर", path: "/category/career" },
-      { name: "लाइफ स्टाइल", path: "/category/lifestyle" },
+      { name: "जुर्म", path: "/crime" },
+      { name: "खेल", path: "/sports" },
+      { name: "करियर", path: "/career" },
+      { name: "लाइफ स्टाइल", path: "/lifestyle" },
       { name: "मूवी मसाला", path: "/category/entertainment" },
-      { name: "धर्म", path: "/category/religion" },
+      { name: "धर्म", path: "/dharm" },
       { name: "कारोबार", path: "/category/business" }
     ],
     english: [
       { name: "Home", path: "/" },
-      { name: "Elections", path: "/category/elections" },
-      { name: "Bihar", path: "/category/bihar" },
-      { name: "Jharkhand", path: "/category/jharkhand" },
-      { name: "Nation", path: "/category/nation" },
+      { name: "Elections", path: "/election" },
+      { name: "Bihar", path: "/bihar" },
+      { name: "Jharkhand", path: "/jharkhand" },
+      { name: "Nation", path: "/nation" },
       { name: "Politics", path: "/category/politics" },
-      { name: "Crime", path: "/category/crime" },
-      { name: "Sports", path: "/category/sports" },
-      { name: "Career", path: "/category/career" },
-      { name: "Lifestyle", path: "/category/lifestyle" },
+      { name: "Crime", path: "/crime" },
+      { name: "Sports", path: "/sports" },
+      { name: "Career", path: "/career" },
+      { name: "Lifestyle", path: "/lifestyle" },
       { name: "Entertainment", path: "/category/entertainment" },
-      { name: "Religion", path: "/category/religion" },
+      { name: "Religion", path: "/dharm" },
       { name: "Business", path: "/category/business" }
     ]
   };
@@ -49,18 +49,18 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md notranslate">
       {/* Compact Language Toggle */}
-      <div className="bg-gradient-to-r from-indigo-700 to-blue-800 text-white text-xs py-1">
+      <div className="bg-gradient-to-r from-green-400 to-red-300 via-yellow-400  text-white text-xs py-1">
         <div className="container max-w-[1350px] mx-auto px-6 flex justify-end">
           <div className="flex items-center space-x-1">
             <button 
               onClick={() => setLanguage('hindi')}
-              className={`px-2 py-0.5 rounded-sm ${language === 'hindi' ? 'bg-white text-indigo-800 font-medium' : 'text-gray-200'}`}
+              className={`px-2 py-0.5 rounded-sm ${language === 'hindi' ? 'bg-zinc-400 text-indigo-800 font-bold' : 'text-zinc-900'}`}
             >
               हिंदी
             </button>
             <button 
               onClick={() => setLanguage('english')}
-              className={`px-2 py-0.5 rounded-sm ${language === 'english' ? 'bg-white text-indigo-800 font-medium' : 'text-gray-200'}`}
+              className={`px-2 py-0.5 rounded-sm ${language === 'english' ? 'bg-white text-indigo-800 font-bold' : 'text-zinc-900'}`}
             >
               English
             </button>
